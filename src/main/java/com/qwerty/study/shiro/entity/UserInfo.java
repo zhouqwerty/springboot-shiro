@@ -8,6 +8,7 @@ import java.util.List;
 public class UserInfo implements Serializable {
     @Id
     @GeneratedValue
+    //在oracle数据库中，uid这个名称是被占用的，所有这里最好不要用uid命名，这里使用了userId
     private Integer userId;
     @Column(unique =true)
     private String username;//帐号
